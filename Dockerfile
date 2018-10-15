@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 MAINTAINER Huang Rui <vowstar@gmail.com>, Turtle <turtled@emqtt.io>
 
-ENV EMQ_VERSION=v2.3.11
+ENV EMQ_VERSION=v2.3.9
 
 COPY ./start.sh /start.sh
 
@@ -21,7 +21,7 @@ RUN set -ex \
         #erlang-gs \
         erlang-observer \
         erlang-ssh \
-        #erlang-ose \
+        erlang-ose \
         erlang-cosfiletransfer \
         erlang-runtime-tools \
         erlang-os-mon \
